@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+#wrapper {
+min-width: 375px;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;    
+}
+
+header {
+        display: flex;
+		justify-content: center;
+        height: 100px;
+        margin-bottom: 10px;
+        background-color: lightgray;
+        margin-bottom: 10px; 
+		grid-area: header;
+		font-size: 30pt;
+    }     
+	.logo {
+		padding-top: 20px;
+	}
+nav {
+        background-color:;
+        margin-bottom: 10px; 
+		grid-area: nav;
+    }
+    
+main {
+        background-color:;
+        margin-bottom: 10px; 
+		grid-area: main;
+		margin-right: 10px;
+	font-size: 16pt;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    } 
+    
+article {
+        background-color:lightgrey;
+        margin-bottom: 10px; 
+		grid-area: article;
+	font-size: 18pt;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    }
+	section {
+		background-color:lightgrey;
+		grid-area: section;
+	}
+footer {
+        background-color:lightgrey;
+		grid-area: footer;
+	display: flex;
+		justify-content: center;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+
+    }    
+    figcaption {
+		font-size: 12pt;
+
+	}
+p {
+        line-height: 125%
+    } 
+blockquote {
+        line-height: 130%;
+	}    
+    
+h4 {
+        
+    }
+    
+h6 {
+        font-size: 105%;
+    }
+	.modern {
+		margin-top: ;
+	}
+.topnav {
+  overflow: hidden;
+  background-color: black; /* color of bar*/
+} /* This was the code I borrowed from w3schools */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white; /* unselected words*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+.topnav a:hover {
+  background-color: lightgrey;/*hover*/
+  color: black;/*text hover*/
+}
+
+.topnav a.active {
+  background-color: lightgrey; /*selected background*/
+  color: black; /*selected words*/
+}
+	
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 784px) { /* This was the code I borrowed from w3schools */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 784px) { /* This was the code I borrowed from w3schools */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+    
+
+@media screen and (min-width:784px){
+	#wrapper {
+		display: grid;
+		grid-template-areas:
+			'header header header header header'
+			'nav nav nav nav nav'
+			'main main main article article'
+			'main main main section section'
+			'footer footer footer footer footer';
+	}
+		/* This is where I'll put most of the responsive rules we've covered weeks 1-4 */
+}
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+<header><img src="links/artboard3.png" height="75%" alt="Website Logo Design History" class="logo"> </header>
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="sources.html" class="active">Sources</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </nav>
+    
+<main>
+
+   
+	<figure>
+	<img src="links/moto.jpg" width="100%" alt="Moto Poster by Lucille Tenazas" class="modern">
+	<figcaption> Lucille Tenazas, Moto Design Identity Package, 1993. Minimalist typographic composition structured by a geometric grid, featuring asymmetric alignment, restrained color accents, and modernist spatial organization. (4 × 6 in.) </figcaption>
+	</figure>
+	 <h4>Sources (MLA)</h4>
+	<ul>
+    <li>
+      Lucille Tenazas. <em>Lucille Tenazas Knows What’s Missing in Design Education.</em>
+      YouTube, uploaded by [channel name],
+      <a href="https://www.youtube.com/watch?v=xASJw4UnYvA" target="_blank" rel="noopener noreferrer">
+        www.youtube.com/watch?v=xASJw4UnYvA
+      </a>.
+    </li>
+
+    <li>
+      “Lucille Tenazas.” <em>San Francisco Museum of Modern Art</em>,
+      <a href="https://www.sfmoma.org/artist/Lucille_Tenazas/" target="_blank" rel="noopener noreferrer">
+        www.sfmoma.org/artist/Lucille_Tenazas/
+      </a>. Accessed 4 Feb. 2026.
+    </li>
+
+    <li>
+      <em>The Past Is Always Present: Relevance and Longevity in Design Practice.</em>
+      Letterform Archive,
+      <a href="https://letterformarchive.org/shop/the-past-is-always-present-relevance-and-longevity-in-design-practice/" target="_blank" rel="noopener noreferrer">
+        letterformarchive.org
+      </a>. Accessed 4 Feb. 2026.
+    </li>
+
+    <li>
+      “2013 AIGA Medalist: Lucille Tenazas.” <em>AIGA</em>,
+      <a href="https://www.aiga.org/membership-community/aiga-awards/2013-aiga-medalist-lucille-tenazas" target="_blank" rel="noopener noreferrer">
+        www.aiga.org
+      </a>. Accessed 4 Feb. 2026.
+    </li>
+
+    <li>
+      <em>Tenazas Design.</em>
+      <a href="https://www.tenazasdesign.com/" target="_blank" rel="noopener noreferrer">www.tenazasdesign.com</a>.
+      Accessed 4 Feb. 2026.
+    </li>
+
+    <li>
+      “Lucille Tenazas.” <em>Parsons School of Design</em>,
+      <a href="https://www.newschool.edu/parsons/faculty/lucille-tenazas/" target="_blank" rel="noopener noreferrer">
+        www.newschool.edu
+      </a>. Accessed 4 Feb. 2026.
+    </li>
+  </ul>
+    </main>
+
+<article>
+    <blockquote>"Design is a way of looking at the world. You produce an artifact or create a system with a set of conditions, an infrastructure or an apparatus where you’ve done half the equation and you leave the rest for whoever wants to participate."
+		<em><br>-Lucille Tenazas</em></blockquote>
+	<figure>
+		<img src="links/pink.jpg" width="100%" alt="Lucille Tenaxas Archcitecture Furnished Poster 1992"/>
+		<figcaption> Lucille Tenazas, Architecture Realized exhibition poster, in 1992. Experimental typographic composition integrating photography, vertical hierarchy, and architectural abstraction. <br>(24 × 17)</figcaption>
+		</figure>
+     </article>
+<footer>
+    <h6>&copy; 2026 Sarah Thompson</h6>
+    </footer>
+
+</div><!-- This ends the "wrapper"-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+#wrapper {
+min-width: 375px;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;    
+}
+
+header {
+        display: flex;
+		justify-content: center;
+        height: 100px;
+        margin-bottom: 10px;
+        background-color: lightgray;
+        margin-bottom: 10px; 
+		grid-area: header;
+		font-size: 30pt;
+    }     
+	.logo {
+		padding-top: 20px;
+	}
+    
+nav {
+        background-color:;
+        margin-bottom: 10px; 
+		grid-area: nav;
+    }
+	.example {
+		margin-top: 30px;
+	}
+main {
+        background-color:;
+        margin-bottom: 10px; 
+		grid-area: main;
+	font-size: 16pt;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+    } 
+	figcaption {
+		font-size: 12pt;
+	}
+article {
+        background-color:lightgrey;
+        margin-bottom: 10px; 
+		margin-left: 10px;
+		grid-area: article;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+
+	}
+	
+footer {
+        background-color: lightgrey;
+		grid-area: footer;
+	display: flex;
+		justify-content: center;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+
+    }    
+    
+p {
+        font-size: 100%;
+        line-height: 125%
+    } 
+	article {
+		padding-top: 25px;
+  
+}
+blockquote {
+        font-size: 175%;
+        line-height: 143%;
+	margin-bottom: 20px;
+    }  
+	
+h3 {
+        margin-bottom: -5px;
+    }
+    
+h6 {
+        font-size: 100%;
+    }
+	.video{
+	height: 300px;	
+		padding-bottom: 50px;
+	}
+	.portrait {
+    width: 75%;        /* google this */
+    margin-left: 13%;  
+}
+	.example1 {
+	}
+.portrait img {
+    width: 100%;
+    display: block;
+}
+.portrait figcaption {
+    width: 100%;
+}
+	.Yellow {
+	border: 35.5px solid black;
+	display:flex;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+} 
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white; /* unselected words*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+.topnav a:hover {
+  background-color: lightgrey;/*hover*/
+  color: black;/*text hover*/
+}
+
+.topnav a.active {
+  background-color: lightgrey; /*selected background*/
+  color: black; /*selected words*/
+}
+	
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 784px) { /* This was the code I borrowed from w3schools */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 784px) { /* This was the code I borrowed from w3schools */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+    
+
+@media screen and (min-width:784px){
+	#wrapper {
+		display: grid;
+		grid-template-areas:
+			'header header header header header'
+			'nav nav nav nav nav'
+			'main main main article article'
+			'main main main article article'
+			'footer footer footer footer footer';
+	}
+}
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+	<header><img src="links/artboard3.png" height="75%" alt="Website Logo Design History" class="logo"> </header>
+<nav class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="sources.html">Sources</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </nav>
+    
+<main>
+    <h3>Lucille Tenazas Early Career</h3>
+    <p>Lucille Tenazas is a Filipino-born graphic designer, educator, and design leader whose influential career has shaped both visual communication and design education for more than four decades. Born in Manila in 1953, she showed early artistic talent and studied at the College of the Holy Spirit before moving to the United States to pursue postgraduate design education, earning an MFA in design from the Cranbrook Academy of Art. In 1982, she founded Tenazas Design, working first in New York and later in San Francisco before returning to New York. Her studio collaborated with major cultural and educational institutions including the San Francisco Museum of Modern Art, Stanford University Art Museum, UC Berkeley, and Chronicle Books. Her work places typography and linguistic meaning at the center of design, exploring how language and form interact to create layered and poetic visual experiences influenced by modernist movements such as Russian Constructivism and De Stijl.</p>
+
+    <h3>Achievements and Impact </h3>
+    <p>Beyond professional practice, Tenazas has had a major impact as an educator and design leader. She served as the Founding Chair of the MFA Design Program at California College of the Arts, where she emphasized form-giving, leadership, and thoughtful creative development. She later became the Henry Wolf Professor of Communication Design at Parsons School of Design, where she continues mentoring emerging designers. Tenazas also contributed significantly through AIGA, serving as national president from 1996 to 1998. She received the AIGA Medal in 2013 and was named a 2019 AIGA San Francisco Fellow, recognizing her lasting contributions to design and education. Her work is held in the permanent collection of SFMOMA.</p>
+
+    <h3>Continuing Influence</h3>
+    <p>Today, Tenazas remains a vital figure in contemporary graphic design, respected as both a practitioner and mentor. Through ongoing teaching, leadership, and continued exploration of typography and language-driven design, she continues to influence future generations while expanding conversations around critical design practice and the cultural role of design.
+</p> <h3> Interview</h3>
+	<section class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xASJw4UnYvA?si=SJoYh5diviEN4ClL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="example"></iframe>
+		</section>
+		</main>
+
+<article>
+	<figure class="portrait">
+    <img src="links/lucilletenazas.jpg"
+         alt="picture of lucille tenazas">
+    <figcaption>
+        In 2019, Lucille Tenazas was officially recognized as a Fellow by the AIGA San Francisco chapter. This image is sourced from that website.
+    </figcaption>
+</figure>  
+    <blockquote>“As a designer, you should never lose sight of the fact that you are solving somebody's problem. At the same time, you should solve your own as well.” <em> <br>- Lucille Tenazas</em></blockquote>
+	<h2> Works </h2>
+	<figure>
+		<img src="links/blackandwhite.jpg" width="100%" alt="poster design by Lucille tenazas" class="example1">
+			<figcaption> Lucille Tenazas Transparent Invitation, 1990. Exploring layered typography and transparency to create visual depth. </figcaption> </figure>
+	<figure>
+	<img src="links/yellow1.jpg" width="85%" alt="work by Lucille Tenazas Amsterdam" class="Yellow"/>
+	<figcaption class="caption-style"> California College of Arts and Crafts Adopt-a-Book poster, 1992. Tenazas explores the relationship between language, form, and visual communication.</figcaption>
+	</figure>
+	</article>
+    
+<footer>
+    <h6>&copy; 2026 Sarah Thompson</h6>
+    </footer>
+
+</div><!-- This ends the "wrapper"-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
